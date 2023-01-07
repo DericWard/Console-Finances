@@ -86,7 +86,6 @@ let finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
-
 let total = 0;
 let biggestProfitAmount = 0; 
 let biggestProfitMonth = "profitMonth";
@@ -102,9 +101,16 @@ for (let i = 0; i < finances.length-1; i++) {
         biggestProfitAmount = (finances[i+1][1] - finances[i][1]);
         biggestProfitMonth = finances[i+1][0];
     }
+    else if ((finances[i+1][1] + finances[i][1]) < finances[i][1]) {
+        if ((finances[i+1][1]) < biggestLossAmount) {
+            biggestLossAmount = finances[i+1][1];
+            biggestLossMonth = finances[i+1][0];
+        }
+    }
 }
-
 console.log("Total sum of numbers: " + total);
 console.log("Total number of months: " + finances.length);
 console.log("Biggest profit amount: " + biggestProfitAmount);
 console.log("Biggest profit month: " + biggestProfitMonth);
+console.log("Biggest loss amount: " + biggestLossAmount);
+console.log("Biggest loss month: " + biggestLossMonth);
