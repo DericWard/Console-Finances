@@ -98,7 +98,7 @@ for (let i = 0; i < finances.length; i++) {
 
 for (let i = 0; i < finances.length-1; i++) {
     if ((finances[i+1][1] - finances[i][1]) > biggestProfitAmount) {
-        biggestProfitAmount = (finances[i+1][1] - finances[i][1]);
+        biggestProfitAmount = (finances[i+1][1]);
         biggestProfitMonth = finances[i+1][0];
     }
     else if ((finances[i+1][1] + finances[i][1]) < finances[i][1]) {
