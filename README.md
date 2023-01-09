@@ -6,8 +6,8 @@
 ###### Total Months: n
 ###### Total: $n
 ###### Average Change: $n (to two decimal places)
-###### Greatest Increase in Profits: n-month-year ($n)
-###### Greatest Decrease in Profits: n-month-year ($n)
+###### Greatest Increase in Profits: n-month n-year ($n)
+###### Greatest Decrease in Profits: n-month n-year ($n)
 ###### (Where n are real calculated values derived from a provided dataset)
 ### Motivation:
 #### The motivation for this project was to satisfy assignement 4 of edX's Front End Web Development bootcamp course, practicing writing Javascript to iterate over arrays, using array methods, and displaying console output in the required layout/format (as shown above).
