@@ -23,7 +23,7 @@
 #### This is a simple app and tests purely consist of ensuring the displayed output corresponds with the 'App output to console' screenshot seen below.
 ### App screenshots:
 #### App output to console:
-![screenshot](https://user-images.githubusercontent.com/50495939/211387969-98275533-0999-4b85-8b28-2c468d472baf.PNG)
+![image](https://user-images.githubusercontent.com/50495939/211399631-874a6cdc-dda4-406d-883d-5c55bd242119.png)
 #### Provided dataset:
 ![image](https://user-images.githubusercontent.com/50495939/211388203-63c5da4c-cb9b-47f8-8b92-1fc733416f28.png)
 ![image](https://user-images.githubusercontent.com/50495939/211388323-76c2ffdb-bf66-4e51-8275-30c263075535.png)
