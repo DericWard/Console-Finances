@@ -91,30 +91,46 @@ let biggestProfitAmount = 0;
 let biggestProfitMonth = "profitMonth";
 let biggestLossAmount = 0;
 let biggestLossMonth = "lossMonth";
-  
+let monthlyDifferences = [];
+let singleDifference = 0;
+let monthlyDifferencesTotal = 0;
+let monthlyDifferencesAverage = 0;
+
+// find the number of months in the dataset 
 for (let i = 0; i < finances.length; i++) {
-    total = total + finances[i][1];     // number of months in dataset
+    total = total + finances[i][1];     
 }
-  
+// find the biggest profit, the biggest loss, and the month/year they each occured in  
 for (let i = 0; i < finances.length-1; i++) {
-    if (finances[i+1][1] - finances[i][1] > biggestProfitAmount) {
-        biggestProfitAmount = ((finances[i+1][1]) - (finances[i][1]));   // biggest profit
-        biggestProfitMonth = finances[i+1][0];      // month biggest profit occurred
+    if (finances[i+1][1] - finances[i][1] > biggestProfitAmount) {  // biggest profit
+        biggestProfitAmount = ((finances[i+1][1]) - (finances[i][1]));   
+        biggestProfitMonth = finances[i+1][0];      
     }
-    else if (finances[i+1][1] - finances[i][1] < biggestLossAmount) {
-        biggestLossAmount = ((finances[i+1][1]) - (finances[i][1]));   // biggest loss
-        biggestLossMonth = finances[i+1][0];      // month biggest loss occurred 
+    else if (finances[i+1][1] - finances[i][1] < biggestLossAmount) { // biggest loss
+        biggestLossAmount = ((finances[i+1][1]) - (finances[i][1]));   
+        biggestLossMonth = finances[i+1][0];      
     }
 }
+// log the differences between each month in the dataset
+for (let i = 0; i < finances.length - 1; i++) {
+    singleDifference = finances[i+1][1] - finances[i][1];
+    monthlyDifferences.push(singleDifference);
+}
+// find the sum total of all the differences between each month 
+for (i = 0; i < monthlyDifferences.length; i++) {
+    monthlyDifferencesTotal = monthlyDifferencesTotal + monthlyDifferences[i];
+}
+// find the average of all of the differences between each month
+monthlyDifferencesAverage = monthlyDifferencesTotal / monthlyDifferences.length;
+// print the results to the console
+console.log("Financial Analysis");
+console.log("------------------------------");
+console.log("Total Months: " + finances.length);
+console.log("Total: $" + total);
+console.log("Average  Change: $" + monthlyDifferencesAverage.toFixed(2));
+console.log("Greatest increase in profits: " + biggestProfitMonth + "($" + biggestProfitAmount + ")");
+console.log("Greatest decrease in profits: " + biggestLossMonth + "($" + biggestLossAmount + ")");
 
-
-
-console.log("Number of months in dataset: " + finances.length + " months.\n\n");
-console.log("Net total profit/loss: £" + total + ".\n\n");
-console.log("Biggest profit amount: £+" + biggestProfitAmount + ".");
-console.log("Biggest profit month: " + biggestProfitMonth + ".\n\n");
-console.log("Biggest loss amount: £" + biggestLossAmount + ".");
-console.log("Biggest loss month: " + biggestLossMonth + ".");
 
 
 
