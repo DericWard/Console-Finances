@@ -128,9 +128,9 @@ console.log("------------------------------");
 console.log("Total Months: " + finances.length);
 console.log("Total: $" + total);
 console.log("Average  Change: $" + monthlyDifferencesAverage.toFixed(2));
-console.log("Greatest increase in profits: " + biggestProfitMonth + "($" + biggestProfitAmount + ")");
-console.log("Greatest decrease in profits: " + biggestLossMonth + "($" + biggestLossAmount + ")");
-
+console.log("Greatest increase in profits: " + biggestProfitMonth + " ($" + biggestProfitAmount + ")");
+console.log("Greatest decrease in profits: " + biggestLossMonth + " ($" + biggestLossAmount + ")");
+// end
 
 
 
