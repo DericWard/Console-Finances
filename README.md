@@ -1,4 +1,4 @@
-## Assignment 4: Console-Finances
+## Assignment 4: Console Finances
 ### Description: 
 #### For a given dataset, console output data to meet the following criteria:
 ###### Financial Analysis
