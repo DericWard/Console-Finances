@@ -20,7 +20,7 @@
 #### Mac Chrome users: Command+Option+J
 #### If you are not using the Chrome browser, or the above commands do not work for you, please check which shortcut keys are required to open developer tools, or the console, for the browser and operating system you are using.
 ### Tests:
-#### This is a simple app and tests purely consist of ensuring the displayed output corresponds with the 'App output to console' screenshot see below.
+#### This is a simple app and tests purely consist of ensuring the displayed output corresponds with the 'App output to console' screenshot seen below.
 ### App screenshots:
 #### App output to console:
 ![screenshot](https://user-images.githubusercontent.com/50495939/211387969-98275533-0999-4b85-8b28-2c468d472baf.PNG)
