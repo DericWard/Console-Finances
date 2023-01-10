@@ -132,5 +132,3 @@ console.log("Greatest increase in profits: " + biggestProfitMonth + " ($" + bigg
 console.log("Greatest decrease in profits: " + biggestLossMonth + " ($" + biggestLossAmount + ")");
 // end
 
-
-
