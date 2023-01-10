@@ -10,7 +10,7 @@
 ###### Greatest Decrease in Profits: n-month n-year ($n)
 ###### (Where n are real calculated values derived from a provided dataset)
 ### Motivation:
-#### The motivation for this project was to satisfy assignement 4 of edX's Front End Web Development bootcamp course, working with arrays in Javascript, and displaying the required results of these array operations to the console in the required layout/format (as shown above).
+#### The motivation for this project was to satisfy assignment 4 of edX's Front End Web Development bootcamp course, working with arrays in Javascript, and displaying the required results of these array operations to the console in the required layout/format (as shown above).
 ### Installation:
 #### To install this app please clone: https://github.com/DericWard/Console-Finances
 ### Live site:
