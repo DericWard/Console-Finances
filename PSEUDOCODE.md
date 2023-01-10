@@ -20,7 +20,7 @@
 5. Biggest delta decrease?
 
 
-negative test: if 1st value is negative (-7), and 2nd value is positive (+10), we want the result to be 7 + 10 = 17.
+negative test for differences: if 1st value is negative (eg: -7), and 2nd value is positive (eg: +10), we want the result to be 7 + 10 = 17.
 
 ****
 
